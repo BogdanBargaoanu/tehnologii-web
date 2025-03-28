@@ -1,0 +1,25 @@
+.container {
+    text-align: center;
+    width: 640px;
+    margin-top: 60px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;              
+}
+
+.title{
+    font-size: 44px;
+}
+
+span {
+    color: #D50000;
+}       
+
+.thin{
+    font-weight: 100;
+    color: gray;
+}
+
+p{
+    background-color: #D50000;
+    color: white;   
+}

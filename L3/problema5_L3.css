@@ -1,0 +1,39 @@
+•⁠  ⁠{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.block-display {
+    display: block;
+    background-color: #b0c4b0;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #698169;
+}
+
+.inline-container {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.inline-element {
+    display: inline-block;
+    background-color: #b0c4b0;
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid #698169;
+}
+
+.paragraph-section {
+    display: flex;
+    gap: 10px;
+}
+
+.paragraph {
+    flex: 1;
+    background-color: #b0c4b0;
+    padding: 50px;
+    border: 1px solid #698169;
+}
