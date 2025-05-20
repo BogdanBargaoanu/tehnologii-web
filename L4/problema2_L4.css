@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Stilizarea paragrafelor */
+.paragraf {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Stilizarea paragrafului selectat cu fundal roșu */
+.paragraf-selectat {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+/* Litera inițială mare și roșie */
+.litera-initiala {
+    color: #ff0000;
+    font-size: 2.5em;
+    font-weight: bold;
+    float: left;
+    line-height: 0.8;
+    margin-right: 5px;
+}
+
+/* Stilizarea link-urilor */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pictograma pentru link-uri externe */
+.fa-external-link {
+    margin-left: 3px;
+    font-size: 0.8em;
+}
+
+/* Stilizarea butonului de text selectat */
+.text-selectat {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Săgeata care indică de la buton spre textul selectat */
+.text-selectat::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid #3498db;
+}
+
+/* Exemplu de utilizare a iconițelor Font Awesome */
+.icoane-demo i {
+    color: #1E90FF;
+    font-family: FontAwesome;
+    content: "\f085";
+    margin: 0 10px;
+    font-size: 24px;
+}
