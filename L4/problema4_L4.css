@@ -1,0 +1,143 @@
+/* Resetarea stilurilor de bază */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Stilizare header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-style: italic;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Layout conținut principal */
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Stilizare container imagine */
+.image-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navigația cu buline pentru slideshow */
+.dots-nav {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #4CAF50;
+}
+
+/* Stilizare pentru conținutul text */
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-column {
+    width: 100%;
+}
+
+.text-column p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+/* Media queries pentru responsivitate */
+@media screen and (min-width: 768px) {
+    .content {
+        flex-direction: row;
+        gap: 30px;
+    }
+    
+    .image-container {
+        flex: 1;
+        margin-bottom: 0;
+    }
+    
+    .text-content {
+        flex: 1;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .text-content {
+        flex-direction: row;
+    }
+    
+    .text-column {
+        flex: 1;
+        padding-right: 15px;
+    }
+    
+    .text-column:last-child {
+        padding-right: 0;
+    }
+    
+    .content {
+        align-items: flex-start;
+    }
+    
+    .image-container {
+        flex: 0 0 40%;
+    }
+}
+
+/* Pentru ecrane foarte mari, limitează lățimea containerului */
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1300px;
+    }
+}
