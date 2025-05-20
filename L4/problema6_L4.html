@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 6.14 - Animație cu @keyframes</title>
+    <link rel="stylesheet" href="problema6_L4.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Animație cu @keyframes</h1>
+        <div class="animation-box">
+            <div class="square"></div>
+        </div>
+        <div class="controls">
+            <button onclick="restartAnimation()">Restart animație</button>
+        </div>
+    </div>
+
+    <script>
+        function restartAnimation() {
+            const square = document.querySelector('.square');
+            // Reaplic animația resetând clasa
+            square.classList.remove('square');
+            void square.offsetWidth; // Forțează reflow
+            square.classList.add('square');
+        }
+    </script>
+</body>
+</html>
