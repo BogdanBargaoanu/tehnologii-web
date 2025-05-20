@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 3 - Text cu Link</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .clickable-text {
+            color: #3498db;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .clickable-text:hover {
+            color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Problema 3 - Text cu Link</h1>
+        <p>Afișați textul "Please click here!". Când se dă click pe textul menționat, se va deschide link-ul următor: https://aut.utcluj.ro/</p>
+        
+        <div id="result">
+            <p id="clickText" class="clickable-text">Please click here!</p>
+        </div>
+    </div>
+
+    <script src="problema3_L5.js"></script>
+</body>
+</html>
