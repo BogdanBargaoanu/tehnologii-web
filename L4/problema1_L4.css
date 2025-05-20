@@ -1,0 +1,49 @@
+
+/* Centrarea conținutului paginii */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Containerul principal pentru pagină */
+.pagina {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Containerul pentru imagine */
+.container {
+    position: relative; /* Poziție relativă pentru a fi referință pentru elementele absolute din interior */
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Stilul pentru imagine */
+.container img {
+    width: 100%;
+    display: block;
+}
+
+/* Stilul pentru preț */
+.pret {
+    position: absolute; /* Poziție absolută pentru a fi plasat peste imagine */
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff5722;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Face elementul circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    z-index: 10; /* Asigură că prețul este peste imagine */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
